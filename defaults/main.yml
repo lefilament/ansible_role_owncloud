@@ -1,0 +1,20 @@
+---
+cloud_url: "owncloud.example.org"
+cloud_pg_user: "owncloud"
+cloud_pg_pass: "notSoSecurePassword"
+cloud_pg_hash: "md53fc414b70561de0f2acb4f3b0985f5cd"  # can be obtained with echo "md5`echo -n 'notSoSecurePassword' | md5sum | awk '{print $1}'`"
+cloud_data_dir: "/owncloud"
+
+## E-mail used to generate Let's Encrypt SSL certificate
+default_maintenance_email: "maintenance@example.org"
+
+## Backups
+## Parameters for pushing backups to Object Storage - Instance 1
+swift_cloud_authurl: https://auth.cloud.ovh.net/v3/
+swift_cloud_authversion: 3
+swift_cloud_tenantid: "132e1fa"
+swift_cloud_tenantname: "12312534534"
+swift_cloud_username: "testuser"
+swift_cloud_password: "testpassword"
+swift_cloud_regionname: "GRA"
+cloud_backup_pass: "notSoSecurePassword"
